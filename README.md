@@ -130,7 +130,7 @@
 	```bash
 	docker build -t <image_name> .
 	```
-6. СЗапуск контейнера:
+6. Запуск контейнера:
    ```bash
    docker run -d -p <host_port>:<container_port> <image_name>
    ```
