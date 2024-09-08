@@ -9,4 +9,6 @@ class Message(BaseModel, IDMixin, CreatedAtMixin):
     __tablename__ = "messages"
 
     text: Mapped[str] = mapped_column(nullable=False)
-    author_id: Mapped[int] = mapped_column(Integer, ForeignKey("user.id"), nullable=False)
+    author_id: Mapped[int] = mapped_column(
+        Integer, ForeignKey("users.id"), nullable=False
+    )

@@ -8,5 +8,5 @@ v1_router = APIRouter(prefix="/v1")
 v1_router.include_router(router=message_router)
 v1_router.include_router(router=user_router)
 
-project_router = APIRouter(prefix=f'{settings().PROJECT_NAME}')
+project_router = APIRouter(prefix=f"{settings().PROJECT_NAME}")
 project_router.include_router(v1_router)
