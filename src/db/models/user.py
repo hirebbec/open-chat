@@ -7,5 +7,5 @@ from db.models.mixins import IDMixin, CreatedAtMixin, UpdatedAtMixin
 class User(BaseModel, IDMixin, CreatedAtMixin, UpdatedAtMixin):
     __tablename__ = "users"
 
-    login: Mapped[str] = mapped_column(nullable=False)
-    hashed_password: Mapped[str] = mapped_column(nullable=False)
+    login: Mapped[str] = mapped_column(nullable=False, unique=True)
+    password: Mapped[str] = mapped_column(nullable=False)

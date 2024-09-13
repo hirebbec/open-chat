@@ -1013,6 +1013,9 @@ files = [
     {file = "ruff-0.6.4.tar.gz", hash = "sha256:ac3b5bfbee99973f80aa1b7cbd1c9cbce200883bdd067300c22a6cc1c7fba212"},
 ]
 
+[tool.ruff]
+line-length = 120
+
 [[package]]
 name = "shellingham"
 version = "1.5.4"
